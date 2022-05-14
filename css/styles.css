@@ -546,6 +546,9 @@ img {
 .portfolio-filtr-button-item:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list {
@@ -589,6 +592,11 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Прибираємо всі відступи (обнуляємо показники) */
