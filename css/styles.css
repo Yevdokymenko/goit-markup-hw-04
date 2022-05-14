@@ -191,6 +191,18 @@ img {
   display: flex;
 }
 
+.header-contact-icon {
+  fill: #757575;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-contact-link:hover .header-contact-icon,
+.header-contact-link:focus .header-contact-icon {
+  fill: var(--accent-color);
+}
+
 /* Оформлення футера */
 .footer {
   background-color: var(--hero-background-color);
@@ -248,12 +260,56 @@ img {
   color: var(--white-text-color);
 }
 
+.footer-social {
+  display: block;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-social-connect {
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
+.studio-social {
+  display: flex;
+  gap: 10px;
+}
+
+.studio-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.studio-social-link:hover,
+.studio-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.studio-social-icon {
+  fill: var(--white-text-color);
+}
+
 /* ГОЛОВНА СТОРІНКА СТУДІЇ */
 
 /* Оформлення Героя */
 
 .hero {
-  background-color: var(--hero-background-color);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main-page/background-hero.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -327,6 +383,18 @@ img {
   color: var(--secondary-text-color);
 }
 
+.features-icon {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 /* ОФОРМЛЕННЯ СЕКЦІЇ ПОСЛУГ */
 .work-list {
   display: flex;
@@ -378,6 +446,69 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.team-unit-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-background-color);
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-text-color);
+}
+
+/* Блок клиентов */
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  width: 170px;
+  height: 92px;
+}
+
+.client-icon {
+  fill: #afb1b8;
+}
+
+.client-link:hover,
+.client-icon:focus {
+  border-color: var(--accent-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
 }
 
 /* ОСОБЛИВОСТІ СТОРІНКИ ПОРТФОЛІО */
