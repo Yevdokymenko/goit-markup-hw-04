@@ -163,7 +163,8 @@ img {
 }
 
 .header-contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -414,15 +415,13 @@ img {
 }
 
 .container-features-icon {
-  padding: 25px 0 25px;
+  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 
 .features-icon {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
 }
 
@@ -497,6 +496,14 @@ img {
 }
 
 .social-link:last-child {
+  margin-right: 0px;
+}
+
+.team-unit-social-link {
+  margin-right: 10px;
+}
+
+.team-unit-social-link:last-child {
   margin-right: 0px;
 }
 
@@ -586,7 +593,8 @@ img {
 .portfolio-filtr-button-item:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list {
@@ -632,9 +640,14 @@ img {
   color: var(--secondary-text-color);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.portfolio-item-link {
+  display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Прибираємо всі відступи (обнуляємо показники) */
